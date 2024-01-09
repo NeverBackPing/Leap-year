@@ -2,7 +2,7 @@
 
 void leap(int year)
 {
-    if((year % 4 ==0) && (year % 400 ==0 && year %100 ==0))
+    if((year % 4 ==0 && year %100 !=0) || (year % 400 ==0 ))
     {
         printf("%d is a leap year\n",year);
     }
@@ -19,4 +19,5 @@ int main()
     scanf("%d",&year);
 
     leap(year);
+    return 0;
 }
